@@ -1,3 +1,5 @@
 ## Dragon House Design
 
-Company website for interior design company
+[ongka.github.io/company-website/](ongka.github.io/company-website/)
+
+Company website for an interior design company
