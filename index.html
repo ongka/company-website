@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+    <title>Company Website</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <i class="bi bi-balloon"></i>
+            
+        </div>
+        <ul class="navlinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#story">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="banner">
+        <div class="banner-container">
+            <h1>Dragon House Design</h1>
+            <h3>Dreams made into reality</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nibh lectus, dapibus vel vestibulum eget, blandit vel lectus.</p>
+            <a href="#">Learn More</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="caption">
+            <div class="caption-container">
+                <h1>Simplicity and luxury.</h1>
+                <h1>Aesthetically pleasing.</h1>
+            </div>
+        </div>
+
+        <div id="projects">
+            <div class="project living-room">
+                <div class="project-container">
+                    <h1>Living Room Collection</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mi nisl, sagittis eu ultrices vel, facilisis eget quam.</p>
+                </div>
+            </div>
+
+            <div class="project kitchen">
+                <div class="project-container">
+                    <h1>Kitchen Collection</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mi nisl, sagittis eu ultrices vel, facilisis eget quam.</p>
+                </div>
+            </div>
+
+            <div class="project bedroom">
+                <div class="project-container">
+                    <h1>Bedroom Collection</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mi nisl, sagittis eu ultrices vel, facilisis eget quam.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="team">
+            <h1>Our Team</h1>
+            <div class="team-container">
+                <div class="team-column">
+                    <div class="team-card">
+                        <img src="images/t1.jpg" alt="t1">
+                        <h3>Member 1</h3>
+                    </div>
+                    <div class="team-card">
+                        <img src="images/t2.jpg" alt="t2">
+                        <h3>Member 2</h3>
+                    </div>
+                    <div class="team-card">
+                        <img src="images/t3.jpg" alt="t3">
+                        <h3>Member 3</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="story">
+            <div class="story-container">
+                <h1>Our Story</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare porta enim, nec cursus odio. Maecenas faucibus sed odio at porta. Maecenas vulputate eleifend imperdiet. Mauris a lectus in leo blandit viverra vitae at ex. Nulla vel metus urna. Aliquam sed blandit ipsum. Cras et commodo ex.
+                </p>
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu blandit magna. Suspendisse pharetra in ante at rhoncus. Praesent non tempus magna. Integer molestie posuere nisi in aliquam. Nullam blandit ipsum ut velit lacinia, eget sagittis purus auctor.
+
+                </p>
+                
+                
+            </div>
+        </div>
+
+        <div id="contact">
+            <h1>Contact Us</h1>
+            <div class="contact-container">
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Phone">
+                    <textarea cols="30" rows="10"></textarea>
+                    <input type="submit" id="submit-btn">
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="copyright">
+                &copy; 2022 Dragon House Design Inc, All Rights Reserved.
+            </div>
+        </footer>
+    </div>
+
+    <button class="scrollToTopBtn"><i class="bi bi-arrow-up-short"></i></button>
+
+    <script>
+        var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
+        var rootElement = document.documentElement;
+
+        function handleScroll() {
+        
+        var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+        if (rootElement.scrollTop / scrollTotal > 0.2) {
+            
+            scrollToTopBtn.classList.add("showBtn");
+        } else {
+            
+            scrollToTopBtn.classList.remove("showBtn");
+        }
+        }
+
+        function scrollToTop() {
+        
+        rootElement.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+        }
+        scrollToTopBtn.addEventListener("click", scrollToTop);
+        document.addEventListener("scroll", handleScroll);
+
+    </script>
+</body>
+</html>
